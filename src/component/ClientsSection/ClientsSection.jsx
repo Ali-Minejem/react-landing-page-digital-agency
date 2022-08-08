@@ -16,7 +16,9 @@ function ClientsSection() {
   ));
   return (
     <>
-      <SimpleSlider slides={slides} />
+      <div style={{ marginBottom: 100 }}>
+        <SimpleSlider slides={slides} />
+      </div>
     </>
   );
 }

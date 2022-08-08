@@ -10,7 +10,6 @@ import WhatTheySaySection from "./component/WhatTheySaySection/WhatTheySaySectio
 import Pricing from "./component/Pricing/Pricing";
 import GetInTouchSection from "./component/GetInTouchSection/GetInTouchSection";
 import Footer from "./component/Footer/Footer";
-import Breaker from "./component/Breaker/Breaker";
 
 function App() {
   const navbarItems = [
@@ -24,32 +23,25 @@ function App() {
 
   return (
     <>
-      <div className="App">
-        <Navbar navbarItems={navbarItems} />
+      <Navbar navbarItems={navbarItems} />
+
+      <div className="App" id="home">
         <PresentationSection />
-        <Breaker numberOfBreakers={3} />
         <ClientsSection />
-        <Breaker numberOfBreakers={3} />
         <ServicesSection />
-        <Breaker numberOfBreakers={3} />
       </div>
       <StudyCreativitySection />
-      <Breaker numberOfBreakers={3} />
       <div className="App">
         <ProjectsSection />
       </div>
-      <StudyCreativitySection srcImage={3} reverseColumn />
-      <Breaker numberOfBreakers={3} />
+      <StudyCreativitySection srcImage={2} reverseColumn />
       <div className="App">
         <BlogStoriesSection />
       </div>
-      <Breaker numberOfBreakers={3} />
       <WhatTheySaySection />
-      <Breaker numberOfBreakers={3} />
       <div className="App">
         <Pricing />
       </div>
-      <Breaker numberOfBreakers={3} />
       <GetInTouchSection />
       <Footer />
     </>

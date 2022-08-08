@@ -6,7 +6,12 @@ export const NavList = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  flex-basis: 50%;
+
+  @media screen and (max-width: 1030px) {
+    flex-basis: 65%;
+  }
+
   & li a {
     text-decoration: dashed;
     color: #1e144d;
@@ -19,11 +24,7 @@ export const NavList = styled.ul`
       transition: 0.2s;
     }
   }
-  @media screen and (min-width: 870px) and (max-width: 920px) {
-    & {
-      gap: 30px;
-    }
-  }
+
   @media screen and (max-width: 870px) {
     & {
       display: ${(props) => (props.toggleMenu ? "block" : "none")};
@@ -49,7 +50,8 @@ export const PresentationSection = styled.section`
   display: flex;
   color: #1e144d;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 69px;
+  margin-bottom: 101px;
 
   & .presentation__section__col1,
   & .presentation__section__col2 {
@@ -135,6 +137,7 @@ export const Title = styled.h1`
 `;
 
 export const ServicesSection = styled.section`
+  margin-bottom: 100px;
   & .services__section__text {
     font-size: 16px;
     max-width: 60%;
@@ -183,6 +186,7 @@ export const Card = styled.div`
 export const StudyCreativitySection = styled.section`
   background: #f5f5f5;
   padding: 30px 0;
+  margin-bottom: 60px;
   & .study__creativity__parent {
     max-width: 70%;
     margin: 0 auto;
@@ -280,6 +284,7 @@ export const StudyCreativitySection = styled.section`
 `;
 
 export const ProjectsSection = styled.section`
+  margin-bottom: 80px;
   .project__container {
     display: flex;
     gap: 20px;
@@ -311,6 +316,7 @@ export const Project = styled.div`
 `;
 
 export const BlogStoriesSection = styled.section`
+  margin-bottom: 100px;
   .blog__row1 {
     display: flex;
     gap: 30px;
@@ -355,6 +361,7 @@ export const Blog = styled.div`
 `;
 export const WhatTheySaySection = styled.section`
   background-color: #f5f5f5;
+  margin-bottom: 70px;
   padding: 60px 0;
   .what__they__say__container {
     max-width: 70%;
@@ -406,6 +413,7 @@ export const WhatTheySayBlocks = styled.div`
 `;
 
 export const Pricing = styled.section`
+  margin-bottom: 80px;
   h1 {
     font-size: 36px;
     font-weight: bolder;

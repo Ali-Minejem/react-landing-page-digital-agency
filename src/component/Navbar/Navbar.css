@@ -1,10 +1,10 @@
 .nav__container {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding:25px 0
+    padding:15px 65px;
 }
 .nav__container__logo {
+    flex-basis: 50%;
     font-size: 25px;
     font-weight: 600;
     color:#766dff;
@@ -24,7 +24,10 @@
 .nav__container__menu__icon{
     display: none;
 }
-
+@media screen and (max-width: 1030px) {
+    .nav__container__logo {
+        flex-basis: 35%;}
+  }
 @media screen and (max-width: 870px) {
     .nav__container {
         flex-direction: column;

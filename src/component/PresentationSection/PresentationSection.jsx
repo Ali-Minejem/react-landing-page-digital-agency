@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 function PresentationSection() {
   return (
     <PresentationSectionContainer>
-      <div className="presentation__section__col1">
+      <div className="presentation__section__col1" id="#home">
         <h1>
           We are Digital <br /> Agency.
         </h1>
